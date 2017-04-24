@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"> {{announcement.name}} <span class="pull-right">{{announcement.date}}</span></h3>
+  </div>
+  <div class="panel-body">
+    {{announcement.message}}
+    <!-- {{announcement-update announcement=model update="update"}} -->
+    <br>
+    <br>
+    <button class="btn btn-default"{{action 'delete' announcement}}>Delete Announcement</button>
+
+  </div>
+</div>

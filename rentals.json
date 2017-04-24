@@ -10,11 +10,15 @@
     "type": "Condo",
     "bedrooms": 1,
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"
-  }, {
-    "owner": "Violet Beauregarde",
-    "city": "Portland",
-    "type": "Apartment",
-    "bedrooms": 3,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
-  }]
+  }],
+
+  "announcements": [{
+      "name": "Bob the Admin",
+      "message": "The website will be down for updates on 5/12/2017",
+      "date": "05/01/2017",
+    }, {
+      "name": "Lisa the Admin",
+      "message": "New Features Coming Soon. Stay tuned. ",
+      "date": "04/23/2017"
+    }]
 }

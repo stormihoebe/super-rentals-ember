@@ -1,8 +1,16 @@
-<li>
-  {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}
-  {{#if isImageShowing}}
-    <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
-  {{else}}
-    <button {{action 'imageShow'}}>Image</button>
-  {{/if}}
-</li>
+
+  <div class="panel panel-default">
+
+      <div class="panel-heading">
+          {{#link-to 'rental' rental.id}}<h3 class="panel-title">
+          {{rental.owner}}'s {{rental.type}} in {{rental.city}}</h3>{{/link-to}}
+      </div>
+
+    <div class="panel-body">
+      {{#if isImageShowing}}
+        <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
+      {{else}}
+        <button {{action 'imageShow'}} class="btn btn-default">Image</button>
+      {{/if}}
+    </div>
+  </div>

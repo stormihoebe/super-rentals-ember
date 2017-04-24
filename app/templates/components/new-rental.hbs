@@ -1,35 +1,42 @@
 {{#if addNewRental}}
 <h1>New Rental</h1>
   <div>
-    <form>
-      <div class="form-group">
-        <label for="owner">Owner</label>
-        {{input value=owner id="owner"}}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"> </h3>
       </div>
+      <div class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="owner">Owner</label>
+            {{input value=owner id="owner" class="form-control"}}
+          </div>
 
-      <div class="form-group">
-        <label for="type">Type</label>
-        {{input value=type id="type"}}
+          <div class="form-group">
+            <label for="type">Type</label>
+            {{input value=type id="type" class="form-control"}}
+          </div>
+
+          <div class="form-group">
+            <label for="city">City</label>
+            {{input value=city id="city" class="form-control"}}
+          </div>
+
+          <div class="form-group">
+            <label for="bedrooms">Number of Bedrooms</label>
+            {{input value=bedrooms type="number" id="bedrooms" class="form-control"}}
+          </div>
+
+          <div class="form-group">
+            <label for="image">Image URL</label>
+            {{input value=image id="image" class="form-control"}}
+          </div>
+
+          <button {{action 'saveRental1'}} class="btn btn-default">Save</button>
+        </form>
       </div>
-
-      <div class="form-group">
-        <label for="city">City</label>
-        {{input value=city id="city"}}
-      </div>
-
-      <div class="form-group">
-        <label for="bedrooms">Number of Bedrooms</label>
-        {{input value=bedrooms id="bedrooms"}}
-      </div>
-
-      <div class="form-group">
-        <label for="image">Image URL</label>
-        {{input value=image id="image"}}
-      </div>
-
-      <button {{action 'saveRental1'}}>Save</button>
-    </form>
+    </div>
   </div>
   {{else}}
-  <button {{action 'rentalFormShow'}}>New Rental</button>
+  <button {{action 'rentalFormShow'}} class="btn btn-default">New Rental</button>
 {{/if}}
